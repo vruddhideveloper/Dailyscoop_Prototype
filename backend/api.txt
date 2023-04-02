@@ -1,0 +1,58 @@
+NEW HEADLINE API = https://newsapi.org/v2/top-headlines?country=in&category=entertainment&apiKey=API_KEY
+
+
+// Latest entertainment
+const options = {
+  method: 'GET',
+  url: 'https://cinemos.p.rapidapi.com/news/bollywood',
+  headers: {
+    'X-RapidAPI-Key': 'a21c9790eemshd79f0a580d099cap1b6820jsnf66a4c151b24',
+    'X-RapidAPI-Host': 'cinemos.p.rapidapi.com'
+  }
+};
+
+
+// Sports news
+https://rapidapi.com/cricketapilive/api/cricbuzz-cricket/
+const options = {
+  method: 'GET',
+  url: 'https://cricbuzz-cricket.p.rapidapi.com/matches/v1/recent',
+  headers: {
+    'X-RapidAPI-Key': 'a21c9790eemshd79f0a580d099cap1b6820jsnf66a4c151b24',
+    'X-RapidAPI-Host': 'cricbuzz-cricket.p.rapidapi.com'
+  }
+};
+
+// Stocks API
+https://rapidapi.com/suneetk92/api/latest-stock-price/
+const options = {
+  method: 'GET',
+  url: 'https://latest-stock-price.p.rapidapi.com/price',
+  params: {Indices: 'NIFTY 50'},
+  headers: {
+    'X-RapidAPI-Key': 'a21c9790eemshd79f0a580d099cap1b6820jsnf66a4c151b24',
+    'X-RapidAPI-Host': 'latest-stock-price.p.rapidapi.com'
+  }
+};
+
+
+// Movie Reviews
+const options = {
+  method: 'GET',
+  url: 'https://ott-details.p.rapidapi.com/advancedsearch',
+  params: {
+    start_year: '2020',
+    end_year: '2020',
+    min_imdb: '6',
+    max_imdb: '7.8',
+    genre: 'action',
+    language: 'english',
+    type: 'movie',
+    sort: 'latest',
+    page: '1'
+  },
+  headers: {
+    'X-RapidAPI-Key': 'a21c9790eemshd79f0a580d099cap1b6820jsnf66a4c151b24',
+    'X-RapidAPI-Host': 'ott-details.p.rapidapi.com'
+  }
+};
