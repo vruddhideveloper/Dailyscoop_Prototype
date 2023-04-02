@@ -5,7 +5,7 @@ const Reviews = ({ image, title, description }) => {
   const [review, setReview] = useState([]);
 
   const fetchData = async () => {
-    const response = await axios.get("http://localhost:5000/api/entertainment");
+    const response = await axios.get("http://localhost:5000/api/movie-reviews");
     setReview(response.data);
     console.log(response.data);
   };
