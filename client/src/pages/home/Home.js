@@ -6,6 +6,7 @@ import Reviews from '../../components/reviews/Reviews';
 import Entertainment from '../../components/entertainment/Entertainment';
 import { VisualStories } from '../../components/visualStories/VisualStories';
 import Stocks from '../../components/stocks/Stocks';
+import Gadget from '../../components/gadget/Gadget';
 const Home = () => {
   return (
     <div>
@@ -58,6 +59,7 @@ const Home = () => {
       <Stocks />
       <Entertainment />
       <Reviews />
+      <Gadget />
       <VisualStories />
     </div>
   );
