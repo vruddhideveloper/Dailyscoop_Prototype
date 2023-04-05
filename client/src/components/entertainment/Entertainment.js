@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./entertainment.css";
-const Entertainment = (props) => {
+const Entertainment = () => {
   const [ent, setEnt] = useState([]);
   const fetchData = async () => {
     const response = await axios.get("http://localhost:5000/api/entertainment");
