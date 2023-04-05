@@ -28,7 +28,14 @@ export const VisualStories = () => {
       </div>
       <div className='w-full grid grid-flow-col auto-cols-max gap-x-10 overflow-x-scroll scrollbar-hide mb-28'>
         {vs.map((data, index, arr) => {
-          return <VisualStoriesCard data={data} index={index} arr={arr} />;
+          return (
+            <VisualStoriesCard
+              key={data._id}
+              data={data}
+              index={index}
+              arr={arr}
+            />
+          );
         })}
       </div>
     </div>
